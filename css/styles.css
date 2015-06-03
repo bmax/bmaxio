@@ -1,0 +1,115 @@
+.loadLogo {
+  height:150px;
+  position:relative;
+}
+.loadNav {
+  width: 300px;
+}
+.logo {
+  background: #000 url('images/logo.png') center no-repeat;
+
+  height:150px;
+  width:300px;
+  margin:0 auto;
+  box-shadow:4px 0 6px rgba(0,0,0,.1);
+  position:absolute;
+  -moz-animation-name: dropHeader;
+  -moz-animation-duration: 2s;
+
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-duration: 2s;
+      
+  animation-name: dropHeader;
+  animation-duration: 2s;
+}
+.navbar {
+  background:#000;
+  opacity:1;
+  -moz-animation-name: showNav;
+  -moz-animation-duration: 2.5s;
+      
+   -webkit-animation-name: showNav;
+   -webkit-animation-duration: 2.5s;
+
+    animation-name: showNav;
+    animation-duration: 2.5s;
+}
+@-moz-keyframes showNav {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+}
+@-webkit-keyframes showNav {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+}
+    @keyframes showNav {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+}
+
+@-moz-keyframes dropHeader {
+      0% {
+        -moz-transform:rotate(0deg);
+        top:50%;
+        left:50%;
+        height:60px;
+        margin: -20px 0 0 -150px;
+      }
+      100% {
+        -moz-transform: rotate(360deg);
+        left:0;
+        margin:0;
+        top:0;
+        height:150px;
+      }
+}
+@-webkit-keyframes dropHeader {
+      0% {
+        -webkit-transform:rotate(0deg);
+        top:50%;
+        left:50%;
+        height:60px;
+        margin: -20px 0 0 -150px;
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        left:0;
+        margin:0;
+        top:0;
+        height:150px;
+      }
+    }
+    @keyframes dropHeader {
+      0% {
+        transform:rotate(0deg);
+        top:50%;
+        left:50%;
+        height:60px;
+        margin: -20px 0 0 -150px;
+      }
+      100% {
+        transform: rotate(360deg);
+        left:0;
+        margin:0;
+        top:0;
+        height:150px;
+      }
+}
+
+    /* For aesthetics only */
+body {
+  margin: 0;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
