@@ -18,15 +18,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
     <div class="row">
-      <div class="nav">
+      <div class="nav hoverAnim">
         <div class="loadLogo">
           <div class="logo"></div>
         </div>
         <div class="loadNav">
-          <div class="navbar">
-            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <ul class="navbar">
+            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="fa fa-github"></i> GitHub</a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i> Google+</a></li>
           </div>
         </div>
       </div>
@@ -46,4 +46,18 @@
 
 
   </body>
-</html>
+  <script>
+    jQuery(document).ready(function () {
+      console.log('hello');
+      $( ".hoverAnim" ).hover(function() {
+        $( ".navbar, .logo" ).animate({
+          width:'250'
+        });
+      }, function() {
+        $( ".navbar, .logo" ).animate({
+          width:'52'
+        });
+     });
+   });
+          </script>
+        </html>
