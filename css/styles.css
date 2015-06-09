@@ -51,24 +51,25 @@ body {
   animation-duration:1s;
 }
 .navbar li i { margin-right:30px; }
+.navbar li span {color:#fff; }
 .navbar li {
   margin-top: 0;
   padding-left: 20px;
   width: 135px;
   overflow-y: hidden;
-    }
-    /* make keyframes that tell the start state and the end state of our object */
-    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  }
+  /* make keyframes that tell the start state and the end state of our object */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-    @-moz-keyframes dropHeader {
-      0% {
-        -moz-transform:rotate(0deg);
-        top:50%;
-        left:50%;
-        height:60px;
-        margin: -20px 0 0 -150px;
+  @-moz-keyframes dropHeader {
+    0% {
+      -moz-transform:rotate(0deg);
+      top:50%;
+      left:50%;
+      height:60px;
+      margin: -20px 0 0 -150px;
 }
 100% {
   -moz-transform: rotate(360deg);
