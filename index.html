@@ -26,7 +26,7 @@
           <ul class="navbar">
             <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a></li>
             <li><a href="#"><i class="fa fa-github"></i> <span>GitHub</span></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i> <span>Google+</span></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i> <span>Google+</span></a></li>
           </div>
         </div>
       </div>
@@ -49,10 +49,11 @@
   </body>
   <script>
     jQuery(document).ready(function () {
-      $(".nav").css("width", "100%");
-      setTimeout(
-      function() 
-      {
+      var flag = false;
+      $(".logo").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+      function(e) {
+        flag =true;
+        });
         $( ".hoverAnim" ).hover(function() {
           $(".nav").css("width", "300px");
           $( ".navbar, .logo" ).stop().animate({
@@ -64,7 +65,6 @@
               width:'52'
               });
               });
-              }, 500);
               });
             </script>
           </html>
