@@ -48,16 +48,22 @@
   </body>
   <script>
     jQuery(document).ready(function () {
-      console.log('hello');
-      $( ".hoverAnim" ).hover(function() {
-        $( ".navbar, .logo" ).animate({
-          width:'250'
-        });
-      }, function() {
-        $( ".navbar, .logo" ).animate({
-          width:'52'
-        });
-     });
-   });
-          </script>
-        </html>
+      $(".nav").css("width", "100%");
+      setTimeout(
+      function() 
+      {
+        $( ".hoverAnim" ).hover(function() {
+          $(".nav").css("width", "300px");
+          $( ".navbar, .logo" ).stop().animate({
+            width:'250'
+            });
+            }, function() {
+            $(".nav").css("width", "52px");
+            $( ".navbar, .logo" ).stop().animate({
+              width:'52'
+              });
+              });
+              }, 500);
+              });
+            </script>
+          </html>
